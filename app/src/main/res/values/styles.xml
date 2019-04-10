@@ -1,0 +1,98 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:textColorPrimary">@color/darkgrey</item>
+        <item name="android:textColorSecondary">@color/darkgrey</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DarkAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:textColorPrimary">@color/darkgrey</item>
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="TabStyle" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabTextColor">@color/white</item>
+        <item name="tabIconTint">@color/white</item>
+        <item name="tabIndicatorColor">@color/white</item>
+    </style>
+
+    <style name="SettingsTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/backgrey</item>
+        <item name="android:textColorPrimary">@color/darkgrey</item>
+        <item name="android:textColorSecondary">@color/darkgrey</item>
+        <item name="colorPrimaryDark">@color/backgrey</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="backgroundcolor">@color/backgrey</item>
+        <item name="cardbackground">@color/white</item>
+        <item name="textcolor">@color/darkgrey</item>
+    </style>
+
+    <style name="SettingsThemeDark" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/backgrey</item>
+        <item name="android:textColorPrimary">@color/darkgrey</item>
+        <item name="android:textColorSecondary">@color/darkgrey</item>
+        <item name="colorPrimaryDark">@color/backgrey</item>
+        <item name="colorAccent">@color/green</item>
+
+        <item name="backgroundcolor">@color/darkgrey</item>
+        <item name="cardbackground">@color/darkgrey</item>
+        <item name="textcolor">@color/white</item>
+    </style>
+
+    <style name="ShowTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:textColorPrimary">@color/darkgrey</item>
+        <item name="android:textColorSecondary">@color/darkgrey</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="bookmarksTH" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:textColorPrimary">@color/darkgrey</item>
+        <item name="android:textColorSecondary">@color/darkgrey</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="HeaderTextStyle">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">48dp</item>
+            <item name="android:gravity">center_vertical</item>
+            <item name="android:textAllCaps">true</item>
+            <item name="android:textSize">16sp</item>
+            <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="ToolbarHTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textSize">23sp</item>
+    </style>
+
+    <style name="SplashSCTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/white</item>
+    <item name="android:textColorPrimary">@color/darkgrey</item>
+    <item name="android:textColorSecondary">@color/darkgrey</item>
+    <item name="colorPrimaryDark">@color/white</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+    <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    <item name="android:navigationBarColor" tools:targetApi="27">@color/background_material_light</item>
+    <!--<item name="android:navigationBarColor" tools:targetApi="27">@color/background_material_light</item>-->
+    <item name="android:windowContentTransitions" tools:targetApi="21">true</item>
+    </style>
+</resources>

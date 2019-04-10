@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_backbb"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_arrow_left"
+        android:title="Backward" />
+    <item
+        android:id="@+id/menu_forwardbb"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_arrow_right"
+        android:title="Forward" />
+    <item
+        android:id="@+id/action_bookmark"
+        android:icon="@drawable/ic_bookmark_border"
+        android:orderInCategory="100"
+        android:title="BOOKMARK"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_refreshbb"
+        android:title="Refresh" />
+    <item
+        android:id="@+id/menu_sharebb"
+        android:title="Copy Link" />
+    <item
+        android:id="@+id/menu_exitbb"
+        android:title="Exit" />
+
+</menu>

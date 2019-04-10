@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/moviesBttom"
+        android:enabled="true"
+        android:icon="@drawable/ic_movie"
+        android:title="Movies"
+        app:showAsAction="ifRoom"/>
+
+
+    <item
+        android:id="@+id/tvBttom"
+        android:enabled="true"
+        android:icon="@drawable/ic_tv_black"
+        android:title="Tv Series"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/animeBttom"
+        android:enabled="true"
+        android:icon="@drawable/ic_child_black"
+        android:title="Anime"
+        app:showAsAction="ifRoom"/>
+
+</menu>

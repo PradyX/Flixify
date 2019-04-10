@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Flixify</string>
+    <string name="open" />
+    <string name="close" />
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="DummyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+    <string name="link1">Link 1</string>
+    <string name="link2">Link 2</string>
+    <string name="link3">Link 3</string>
+    <string name="link4">Link 4</string>
+    <string name="link5">Link 5</string>
+    <string name="link6">Link 6</string>
+    <string name="link7">Link 7</string>
+    <string name="link8">Link 8</string>
+    <string name="link9">Link 9</string>
+    <string name="link10">Link 10</string>
+    <string name="link11">Link 11</string>
+    <string name="link12">Link 12 </string>
+    <string name="link13">Link 13</string>
+    <string name="link14">Link 14</string>
+
+    <string name="urladdress">Url Address</string>
+    <!-- anime address -->
+    <string name="anime1">http://sr1.animelist1.ir/Anime/Ended/</string>
+    <string name="anime2">http://ftp.alphamediazone.com/Anime%20%26%20Cartoon%20TV%20Series/</string>
+    <string name="anime3">https://archives.eyrie.org/anime/</string>
+    <string name="anime4">https://hypem.com/download/S/</string>
+    <string name="anime5">null</string>
+    <!-- tv address -->
+    <string name="tv1">http://dl2.funsaber.net/serial/</string>
+    <string name="tv2">http://dl.tehmovies.pro/94/series/</string>
+    <string name="tv3">http://dl2.mihanpix.com/Serial/</string>
+    <string name="tv4">http://tvshowsapp.com/feeds/</string>
+    <string name="tv5">https://hypem.com/download/</string>
+    <string name="tv6">http://dl8.heyserver.in/serial/</string>
+    <string name="tv7">http://79.127.126.110/Serial/</string>
+    <string name="tv8">http://ftp.alphamediazone.com/Tv%20Series/</string>
+    <string name="tv9">http://dl3.melimedia.net/mersad/serial/</string>
+    <!--<string name="tv4">http://tvshowsapp.com/feeds/</string>-->
+    <!--<string name="tv5">https://hypem.com/download/</string>-->
+    <!--<string name="tv6"> http://dl8.heyserver.in/serial/</string>-->
+
+
+    <!-- mov address -->
+    <!--<string name="mov6">http://dl3.heyserver.in/film/2018-1/</string>-->
+    <!--<string name="mov2">http://dl3.heyserver.in/film/2017-8/</string>-->
+
+    <string name="movv11">http://103.91.144.230/ftpdata/Movies/Hollywood/</string>
+    <string name="mov1">http://79.127.126.110/Movie/5/</string>
+    <string name="mov3">http://dl3.vaiomusic.org/Movie/</string>
+    <string name="mov4">http://sv4avadl.uploadt.com/Movie/</string>
+    <string name="mov5">http://dl.sitemovie.ir/movie/</string>
+    <string name="mov7">http://dl.filmbaroon.net/</string>
+    <string name="mov8">http://dl2.lavinmovie.ir/movie/2018/</string>
+    <string name="mov9">http://dl.mojoo.ir/upload/film/movies/2018/</string>
+    <string name="movv10">http://103.91.144.230/ftpdata/Movies/</string>
+    <string name="movv12">http://bit.ly/2RsILGJ</string>
+
+    <string name="movv13">http://ftp.alphamediazone.com/Movies/</string>
+    <string name="movv14">http://dl.galaxymovie.biz/Movie/</string>
+    <string name="mov2">http://dl2.haylimoviez.info/</string>
+
+</resources>

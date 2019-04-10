@@ -1,0 +1,198 @@
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/homeFragmentCoordinator"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:htext="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgrey">
+
+            <com.smarteist.autoimageslider.SliderLayout
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <android.support.design.card.MaterialCardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageSlider"
+                android:layout_margin="6dp"
+                android:background="@color/white"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="0dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textAllCaps="true"
+                            android:fontFamily="@font/rubik_medium"
+                            android:id="@+id/text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="Tv Series"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/text22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Recommended for you"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <android.support.design.button.MaterialButton
+                        android:id="@+id/tvMoreBtn"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="4dp"
+                        android:text="more"
+                        android:textColor="@color/colorPrimary" />
+
+                </RelativeLayout>
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmer_view_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="210dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginRight="5dp"
+                    android:visibility="visible">
+
+                    <include layout="@layout/list_shimmer" />
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="55dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            </android.support.design.card.MaterialCardView>
+
+            <ViewFlipper
+                android:visibility="gone"
+                android:layout_below="@id/card1"
+                android:id="@+id/vFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"/>
+            <android.support.design.card.MaterialCardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vFlipper"
+                android:layout_margin="6dp"
+                android:background="@color/white"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="0dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textAllCaps="true"
+                            android:fontFamily="@font/rubik_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="Movies"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="Selected movies for you"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <android.support.design.button.MaterialButton
+                        android:id="@+id/moreBtn2"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="4dp"
+                        android:text="more"
+                        android:textColor="@color/colorPrimary" />
+
+                </RelativeLayout>
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmer_view_container2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="210dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginRight="5dp"
+                    android:visibility="visible">
+
+                    <include layout="@layout/list_shimmer" />
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerlayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="55dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            </android.support.design.card.MaterialCardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        app:elevation="10dp"
+        android:id="@+id/searchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_search" />
+
+</android.support.design.widget.CoordinatorLayout>

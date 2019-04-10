@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1031827351253",
+    "firebase_url": "https://flixify-e7d0a.firebaseio.com",
+    "project_id": "flixify-e7d0a",
+    "storage_bucket": "flixify-e7d0a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031827351253:android:54e284d49f2e14e1",
+        "android_client_info": {
+          "package_name": "prady.flixify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031827351253-cir9cbfqrn77phugbnpneb04m0eaf52l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "prady.flixify",
+            "certificate_hash": "63682d9317bcdfeb050b27f3994eea2842e3baee"
+          }
+        },
+        {
+          "client_id": "1031827351253-s6vn6hpf22j7bb4hrrseiuutk40eao7b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm_iziPGTbdufESrxSJrv3-hecEuSS9fU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1031827351253-s6vn6hpf22j7bb4hrrseiuutk40eao7b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

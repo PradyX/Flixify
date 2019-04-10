@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="examples">
+        <item>Developed By</item>
+        <item>Prady</item>
+    </string-array>
+
+    <string-array name="splash">
+        <item>Connecting to</item>
+        <item>Database</item>
+        <item>Connected</item>
+        <item>Starting...</item>
+    </string-array>
+</resources>

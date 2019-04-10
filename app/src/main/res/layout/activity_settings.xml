@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgrey"
+    tools:context=".Settings">
+
+    <android.support.v7.widget.Toolbar
+        app:title="Settings"
+        app:titleTextColor="@color/darkgrey"
+        android:id="@+id/settingToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.card.MaterialCardView
+        android:background="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        android:layout_margin="5dp"
+        android:layout_below="@id/settingToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_margin="10dp"
+            android:id="@+id/animation_view"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="night_mode.json"
+            app:lottie_loop="true" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="35dp"
+            android:id="@+id/DUI"
+            android:layout_below="@id/animation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/darkgrey"
+            android:text="Dark Mode"/>
+        <Switch
+            android:id="@+id/switchDark"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="35dp"
+            android:layout_below="@id/animation_view"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.design.card.MaterialCardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp">
+            <ImageView
+                android:id="@+id/circleID"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/circle"/>
+            <ImageView
+                android:id="@+id/ImageID"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_movie_org" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/UrlID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="URL Name"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/UrladdressID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="URL Address"
+                android:fontFamily="@font/robotocondensed_light" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#dce6e6e6" />
+</LinearLayout>
