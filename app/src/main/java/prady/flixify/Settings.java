@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatDelegate;
 import android.widget.CompoundButton;
 import android.widget.Switch;
+import android.widget.Toast;
 
 public class Settings extends AppCompatActivity {
 
@@ -41,6 +42,7 @@ public class Settings extends AppCompatActivity {
                 }
             }
         });
+	    Toast.makeText(this, "Sorry, developer was too lazy to implement it.", Toast.LENGTH_LONG).show();
     }
 
     private void restartApp() {

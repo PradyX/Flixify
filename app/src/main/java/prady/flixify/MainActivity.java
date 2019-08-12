@@ -16,6 +16,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.CompoundButton;
 import android.widget.Switch;
+import android.widget.Toast;
 
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
@@ -106,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
     private void selectItemDrawer(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.app_bar_switch:
+	            Toast.makeText(this, "Sorry, developer was too lazy to implement it.", Toast.LENGTH_LONG).show();
                 break;
             case R.id.home:
                 getSupportActionBar().setTitle("Home");

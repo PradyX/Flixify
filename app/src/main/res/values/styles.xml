@@ -64,7 +64,7 @@
         <item name="colorPrimary">@color/white</item>
         <item name="android:textColorPrimary">@color/darkgrey</item>
         <item name="android:textColorSecondary">@color/darkgrey</item>
-        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
@@ -84,13 +84,13 @@
 
     <style name="SplashSCTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
     <!-- Customize your theme here. -->
-    <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimary">@color/black</item>
     <item name="android:textColorPrimary">@color/darkgrey</item>
     <item name="android:textColorSecondary">@color/darkgrey</item>
-    <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorPrimaryDark">@color/black</item>
     <item name="colorAccent">@color/colorAccent</item>
-    <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
-    <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
     <item name="android:navigationBarColor" tools:targetApi="27">@color/background_material_light</item>
     <!--<item name="android:navigationBarColor" tools:targetApi="27">@color/background_material_light</item>-->
     <item name="android:windowContentTransitions" tools:targetApi="21">true</item>

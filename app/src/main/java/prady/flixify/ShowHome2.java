@@ -195,7 +195,12 @@ public class ShowHome2 extends AppCompatActivity {
                     snackbar2.show();
                 }
                 else {
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(a)));
+	                try {
+		                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(a)));
+	                } catch (Exception e) {
+		                Snackbar snackbar2 = Snackbar.make(coordinatorLayout, "Sorry, No Youtube Link Found...", Snackbar.LENGTH_LONG);
+		                snackbar2.show();
+	                }
                 }
             }
         });

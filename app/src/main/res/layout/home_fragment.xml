@@ -1,4 +1,4 @@
-<android.support.design.widget.CoordinatorLayout
+<android.support.design.widget.CoordinatorLayout android:background="@color/white"
     android:id="@+id/homeFragmentCoordinator"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
