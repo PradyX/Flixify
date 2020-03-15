@@ -39,10 +39,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="prady.flixify.Settings"
-            android:parentActivityName="prady.flixify.MainActivity"
-            android:theme="@style/SettingsTheme" />
-        <activity
             android:theme="@style/bookmarksTH"
             android:name="prady.flixify.Bookmarks" />
         <activity

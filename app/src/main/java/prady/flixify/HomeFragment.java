@@ -60,7 +60,7 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.home_fragment, container, false);
-        databaseReference = FirebaseDatabase.getInstance().getReference("TvSeries");
+        databaseReference = FirebaseDatabase.getInstance().getReference("Search");
         databaseReference2 = FirebaseDatabase.getInstance().getReference("Movies");
 
         sliderLayout = rootView.findViewById(R.id.imageSlider);
@@ -93,11 +93,11 @@ public class HomeFragment extends Fragment {
                 transaction.commit();
             }
         });
-        tvBtn = (MaterialButton) rootView.findViewById(R.id.tvMoreBtn);
+        tvBtn = (MaterialButton) rootView.findViewById(R.id.MoreBtn1);
         tvBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment newCase = new TvFragment();
+                Fragment newCase = new MoviesFragment();
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.setCustomAnimations(R.anim.down_to_up, R.anim.slide_out_left, R.anim.up_to_down, R.anim.slide_out_to_right);
                 transaction.replace(R.id.f1Layout, newCase); // give your fragment container id in first parameter

@@ -42,7 +42,7 @@
         <item name="colorAccent">@color/colorAccent</item>
 
         <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
-        <item name="android:navigationBarColor" tools:targetApi="27">@color/background_material_light</item>
+        <item name="android:navigationBarColor" tools:targetApi="27">@color/colorAccent</item>
         <item name="android:windowContentTransitions">true</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>

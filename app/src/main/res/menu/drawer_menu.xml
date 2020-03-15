@@ -2,15 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <group
-        android:checkableBehavior="none"
-        android:visible="false">
-        <item
-            android:id="@+id/app_bar_switch"
-            android:title="Dark Mode"
-            app:actionLayout="@layout/switch_item"
-            app:showAsAction="always" />
-    </group>
-    <group
         android:id="@+id/menu_top"
         android:checkableBehavior="single">
         <item
@@ -21,10 +12,6 @@
             android:id="@+id/searchDw"
             android:icon="@drawable/ic_search"
             android:title="Search" />
-        <item
-            android:id="@+id/sources"
-            android:icon="@drawable/ic_sources"
-            android:title="Sources" />
     </group>
     <group
         android:id="@+id/menu_bottom"

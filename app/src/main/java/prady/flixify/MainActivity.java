@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
     private Toolbar toolbar;
-    private Switch mySwitch;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        mySwitch = (Switch) findViewById(R.id.app_bar_switch);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer);
         mToggle =  new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open,R.string.close);
         mDrawerLayout.addDrawerListener(mToggle);
@@ -96,19 +94,12 @@ public class MainActivity extends AppCompatActivity {
                 sendIntent.setType("text/plain");
                 startActivity(sendIntent);
                 break;
-
-            case R.id.settings:
-                Intent intent1= new Intent(this, Settings.class);
-                startActivity(intent1);
         }
         return super.onOptionsItemSelected(item);
     }
 
     private void selectItemDrawer(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.app_bar_switch:
-	            Toast.makeText(this, "Sorry, developer was too lazy to implement it.", Toast.LENGTH_LONG).show();
-                break;
             case R.id.home:
                 getSupportActionBar().setTitle("Home");
                 getSupportFragmentManager().beginTransaction()
@@ -119,13 +110,7 @@ public class MainActivity extends AppCompatActivity {
                 getSupportActionBar().setTitle("Search");
                 getSupportFragmentManager().beginTransaction()
                         .setCustomAnimations(R.anim.down_to_up,R.anim.slide_out_left,R.anim.up_to_down,R.anim.slide_out_to_right)
-                        .replace(R.id.f1Layout, new TvSearchFragment()).addToBackStack(null).commit();
-                break;
-            case R.id.sources:
-                getSupportActionBar().setTitle("Sources");
-                getSupportFragmentManager().beginTransaction()
-                        .setCustomAnimations(R.anim.down_to_up,R.anim.slide_out_left,R.anim.up_to_down,R.anim.slide_out_to_right)
-                        .replace(R.id.f1Layout, new SourcesFragment()).addToBackStack(null).commit();
+                        .replace(R.id.f1Layout, new MoviesSearchFragment()).addToBackStack(null).commit();
                 break;
 
             case R.id.fav:
@@ -154,25 +139,6 @@ public class MainActivity extends AppCompatActivity {
         mDrawerLayout.closeDrawers();
     }
 
-    private void darkmode() {
-        if(AppCompatDelegate.getDefaultNightMode()==AppCompatDelegate.MODE_NIGHT_YES)
-        {
-            mySwitch.setChecked(true);
-        }
-        mySwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if(isChecked){
-                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                    restartApp();
-                }
-                else {
-                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-                    restartApp();
-                }
-            }
-        });
-    }
     private void restartApp() {
         Intent intent= new Intent(this, MainActivity.class);
         startActivity(intent);
