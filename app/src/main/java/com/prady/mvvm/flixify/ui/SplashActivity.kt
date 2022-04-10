@@ -11,24 +11,35 @@ package com.prady.mvvm.flixify.ui
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
+import com.prady.mvvm.flixify.R
 import com.prady.mvvm.flixify.databinding.ActivitySplashBinding
 import com.prady.mvvm.flixify.ui.mainActivity.MainActivity
 
 class SplashActivity : AppCompatActivity() {
-    var binding: ActivitySplashBinding? = null
+
+    lateinit var binding: ActivitySplashBinding
+    lateinit var slideUp: Animation
 
     companion object {
-        private const val SPLASH_TIME_OUT = 1500
+        private const val SPLASH_TIME_OUT = 3500
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySplashBinding.inflate(layoutInflater)
-        setContentView(binding!!.root)
+        setContentView(binding.root)
+
+        slideUp = AnimationUtils.loadAnimation(this, R.anim.splah_slide_up)
+        binding.animationView.startAnimation(slideUp)
+        binding.animationView2.startAnimation(slideUp)
 
         Handler().postDelayed({
             val i = Intent(this, MainActivity::class.java)
             startActivity(i)
-            finish() }, SPLASH_TIME_OUT.toLong())
+            finish()
+        }, SPLASH_TIME_OUT.toLong())
     }
 }
