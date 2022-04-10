@@ -11,15 +11,15 @@
     <!--android:layout_height="wrap_content">-->
 
     <android.support.v7.widget.Toolbar
-        android:background="?attr/colorPrimary"
-        android:elevation="5dp"
         android:id="@+id/toolbar"
+
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
         app:title="Home"
+        app:titleMarginTop="-60dp"
         app:titleTextAppearance="@style/ToolbarHTheme"
-        app:titleTextColor="@color/darkgrey"
-        app:titleMarginTop="-60dp"/>
+        app:titleTextColor="@color/darkgrey" />
 
     <!--</android.support.design.widget.AppBarLayout>-->
 
