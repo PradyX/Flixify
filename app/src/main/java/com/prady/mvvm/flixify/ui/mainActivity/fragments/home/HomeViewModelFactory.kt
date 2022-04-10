@@ -6,7 +6,7 @@
  *
  */
 
-package com.prady.mvvm.flixify.ui.mainActivity.fragments
+package com.prady.mvvm.flixify.ui.mainActivity.fragments.home
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

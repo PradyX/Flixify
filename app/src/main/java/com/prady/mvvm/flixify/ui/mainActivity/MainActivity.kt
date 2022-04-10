@@ -13,16 +13,19 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.crowdfire.cfalertdialog.CFAlertDialog
+import com.google.android.material.navigation.NavigationBarView
 import com.prady.mvvm.flixify.R
 import com.prady.mvvm.flixify.databinding.ActivityMainBinding
-import com.prady.mvvm.flixify.ui.mainActivity.fragments.HomeFragment
+import com.prady.mvvm.flixify.ui.mainActivity.fragments.favourite.FavouriteFragment
+import com.prady.mvvm.flixify.ui.mainActivity.fragments.home.HomeFragment
+import com.prady.mvvm.flixify.ui.mainActivity.fragments.search.SearchFragment
 import com.prady.mvvm.flixify.utils.ConnectionLiveData
 import com.prady.srmgpc_user.helpers.PreferenceManager
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var preferenceManager : PreferenceManager
-    private lateinit var binding : ActivityMainBinding
+    private lateinit var preferenceManager: PreferenceManager
+    private lateinit var binding: ActivityMainBinding
     private lateinit var connectionLiveData: ConnectionLiveData
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,13 +47,60 @@ class MainActivity : AppCompatActivity() {
                 updateUI(it)
             }
         }
+
+        navigationBarView()
+    }
+
+    private fun navigationBarView() {
+        binding.bottomNavigation.setOnItemSelectedListener(NavigationBarView.OnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.home_page -> {
+                    supportFragmentManager.beginTransaction()
+                        .setCustomAnimations(
+                            R.anim.slide_in_from_left,
+                            R.anim.fade_out,
+                            R.anim.fade_in,
+                            R.anim.slide_out_left
+                        )
+                        .replace(R.id.fragment_container, HomeFragment()).commit()
+                }
+                R.id.search_page -> {
+                    supportFragmentManager.beginTransaction()
+                        .setCustomAnimations(
+                            R.anim.down_to_up,
+                            R.anim.fade_out,
+                            R.anim.fade_in,
+                            R.anim.up_to_down
+                        )
+                        .replace(R.id.fragment_container, SearchFragment()).commit()
+                }
+                R.id.favourite_page -> {
+                    supportFragmentManager.beginTransaction()
+                        .setCustomAnimations(
+                            R.anim.slide_in_right,
+                            R.anim.fade_out,
+                            R.anim.fade_in,
+                            R.anim.slide_out_to_right
+                        )
+                        .replace(R.id.fragment_container, FavouriteFragment()).commit()
+                }
+            }
+            true
+        })
     }
 
     private fun updateUI(it: Boolean) {
-        if(it){
+        if (it) {
             Log.e("Network", "Available")
-            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, HomeFragment()).commit()
-        }else{
+            supportFragmentManager.beginTransaction()
+                .setCustomAnimations(
+                    R.anim.down_to_up,
+                    R.anim.fade_out,
+                    R.anim.fade_in,
+                    R.anim.up_to_down
+                )
+                .replace(R.id.fragment_container, HomeFragment()).commit()
+        } else {
             Log.e("Network", "Not Available")
 
             CFAlertDialog.Builder(this)
@@ -58,7 +108,8 @@ class MainActivity : AppCompatActivity() {
                 .setHeaderView(R.layout.dialog_header_no_connection)
                 .setTitle("No Internet Connection")
                 .setMessage("Please check your internet connection")
-                .addButton("Dismiss", -1, -1,
+                .addButton(
+                    "Dismiss", -1, -1,
                     CFAlertDialog.CFAlertActionStyle.NEGATIVE,
                     CFAlertDialog.CFAlertActionAlignment.JUSTIFIED
                 ) { dialog: DialogInterface, which: Int -> dialog.dismiss() }
