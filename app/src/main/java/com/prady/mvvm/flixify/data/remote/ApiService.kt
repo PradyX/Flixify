@@ -6,7 +6,7 @@
  *
  */
 
-package com.prady.mvvm.templete.data.remote
+package com.prady.mvvm.flixify.data.remote
 
 interface ApiService {
 

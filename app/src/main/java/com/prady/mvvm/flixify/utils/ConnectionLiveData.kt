@@ -6,7 +6,7 @@
  *
  */
 
-package com.prady.mvvm.templete.utils
+package com.prady.mvvm.flixify.utils
 
 import android.content.Context
 import android.content.Context.CONNECTIVITY_SERVICE

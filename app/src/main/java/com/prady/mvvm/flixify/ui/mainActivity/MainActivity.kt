@@ -6,17 +6,17 @@
  *
  */
 
-package com.prady.mvvm.templete.ui.mainActivity
+package com.prady.mvvm.flixify.ui.mainActivity
 
 import android.content.DialogInterface
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.crowdfire.cfalertdialog.CFAlertDialog
-import com.prady.mvvm.templete.R
-import com.prady.mvvm.templete.databinding.ActivityMainBinding
-import com.prady.mvvm.templete.ui.mainActivity.fragments.HomeFragment
-import com.prady.mvvm.templete.utils.ConnectionLiveData
+import com.prady.mvvm.flixify.R
+import com.prady.mvvm.flixify.databinding.ActivityMainBinding
+import com.prady.mvvm.flixify.ui.mainActivity.fragments.HomeFragment
+import com.prady.mvvm.flixify.utils.ConnectionLiveData
 import com.prady.srmgpc_user.helpers.PreferenceManager
 
 class MainActivity : AppCompatActivity() {

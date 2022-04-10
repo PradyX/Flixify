@@ -6,7 +6,7 @@
  *
  */
 
-package com.prady.mvvm.templete
+package com.prady.mvvm.flixify
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry

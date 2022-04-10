@@ -6,7 +6,7 @@
  *
  */
 
-package com.prady.mvvm.templete.data.remote
+package com.prady.mvvm.flixify.data.remote
 
 import com.google.gson.GsonBuilder
 import com.prady.srmgpc_user.helpers.Constraints

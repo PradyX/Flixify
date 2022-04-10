@@ -6,7 +6,7 @@
  *
  */
 
-package com.prady.mvvm.templete
+package com.prady.mvvm.flixify
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

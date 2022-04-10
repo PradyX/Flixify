@@ -6,7 +6,7 @@
  *
  */
 
-package com.prady.mvvm.templete.ui.mainActivity.fragments
+package com.prady.mvvm.flixify.ui.mainActivity.fragments
 
 import android.os.Bundle
 import android.util.Log
@@ -16,11 +16,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.prady.mvvm.templete.data.local.DummyDatabase
-import com.prady.mvvm.templete.data.remote.ApiService
-import com.prady.mvvm.templete.data.remote.RetrofitHelper
-import com.prady.mvvm.templete.databinding.HomeFragmentBinding
-import com.prady.mvvm.templete.repository.DummyRepository
+import com.prady.mvvm.flixify.data.local.DummyDatabase
+import com.prady.mvvm.flixify.data.remote.ApiService
+import com.prady.mvvm.flixify.data.remote.RetrofitHelper
+import com.prady.mvvm.flixify.databinding.HomeFragmentBinding
+import com.prady.mvvm.flixify.repository.DummyRepository
 
 class HomeFragment : Fragment() {
 

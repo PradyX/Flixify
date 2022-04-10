@@ -6,11 +6,11 @@
  *
  */
 
-package com.prady.mvvm.templete.ui.mainActivity.fragments
+package com.prady.mvvm.flixify.ui.mainActivity.fragments
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.prady.mvvm.templete.repository.DummyRepository
+import com.prady.mvvm.flixify.repository.DummyRepository
 
 
 /* This is a factory class that creates a ViewModel */

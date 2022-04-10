@@ -6,12 +6,12 @@
  *
  */
 
-package com.prady.mvvm.templete.repository
+package com.prady.mvvm.flixify.repository
 
 import androidx.lifecycle.LiveData
-import com.prady.mvvm.templete.data.local.Dummy
-import com.prady.mvvm.templete.data.local.DummyDao
-import com.prady.mvvm.templete.data.remote.ApiService
+import com.prady.mvvm.flixify.data.local.Dummy
+import com.prady.mvvm.flixify.data.local.DummyDao
+import com.prady.mvvm.flixify.data.remote.ApiService
 
 class DummyRepository(private val apiService: ApiService, private val dummyDao: DummyDao) {
 

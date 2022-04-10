@@ -6,7 +6,7 @@
  *
  */
 
-package com.prady.mvvm.templete.data.local
+package com.prady.mvvm.flixify.data.local
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
