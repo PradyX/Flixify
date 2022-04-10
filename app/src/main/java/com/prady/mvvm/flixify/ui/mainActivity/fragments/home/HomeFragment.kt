@@ -77,9 +77,9 @@ class HomeFragment : Fragment() {
                 binding.viewPagerImageSlider
             )
         )
-        binding.viewPagerImageSlider.setClipToPadding(false)
-        binding.viewPagerImageSlider.setClipChildren(false)
-        binding.viewPagerImageSlider.setOffscreenPageLimit(3)
+        binding.viewPagerImageSlider.clipToPadding = false
+        binding.viewPagerImageSlider.clipChildren = false
+        binding.viewPagerImageSlider.offscreenPageLimit = 3
         binding.viewPagerImageSlider.getChildAt(0).overScrollMode = RecyclerView.OVER_SCROLL_NEVER
 
         val compositePageTransformer = CompositePageTransformer()

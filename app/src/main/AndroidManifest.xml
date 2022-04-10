@@ -21,8 +21,9 @@
         android:theme="@style/Theme.flixify">
         <activity
             android:name="com.prady.mvvm.flixify.ui.mainActivity.MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
+            android:theme="@style/Theme.flixify.transparent"
             android:name="com.prady.mvvm.flixify.ui.SplashActivity"
             android:exported="true">
             <intent-filter>
