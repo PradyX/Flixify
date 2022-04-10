@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/prady/AndroidStudioProjects/Flixify/app/src/main/res/layout/activity_main.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/prady/AndroidStudioProjects/Flixify/app/src/main/res/layout/activity_splash.xml" value="0.14626288659793815" />
+        <entry key="..\:/Users/prady/AndroidStudioProjects/Flixify/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/prady/AndroidStudioProjects/MVVM-Templete/app/src/main/res/layout/activity_main.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/prady/AndroidStudioProjects/MVVM-Templete/app/src/main/res/layout/activity_splash.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/prady/AndroidStudioProjects/MVVM-Templete/app/src/main/res/layout/fragment_connection_error.xml" value="0.153125" />
