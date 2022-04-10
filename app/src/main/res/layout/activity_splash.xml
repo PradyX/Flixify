@@ -1,40 +1,17 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**
+  ~  * Created by prady on 3/29/22, 1:32 PM
+  ~  * Copyright (c) 2022 . All rights reserved.
+  ~  * Last modified 3/29/22, 1:02 PM
+  ~  */
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/colorPrimaryDark"
+    tools:context=".ui.SplashActivity">
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:layout_above="@id/animation_view"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/animation_view2"
-        android:layout_width="match_parent"
-        android:layout_height="130dp"
-        app:lottie_autoPlay="true"
-        app:lottie_fileName="progress_bar.json"
-        app:lottie_loop="true" />
-    <com.tomer.fadingtextview.FadingTextView
-        android:layout_marginBottom="60dp"
-        android:layout_alignParentBottom="true"
-        android:textColor="@color/grey"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:gravity="center"
-        android:padding="10dp"
-        app:timeout="100"
-        android:textAllCaps="true"
-        android:textSize="8sp"
-        app:texts="@array/splash"
-        android:id="@+id/loadingText"/>
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/animation_view"
-        android:layout_width="match_parent"
-        android:layout_height="5000dp"
-        android:layout_centerInParent="true"
-        app:lottie_autoPlay="true"
-        app:lottie_fileName="video_cam.json"
-        app:lottie_loop="true" />
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,1 +1,26 @@
+/*
+ * *
+ *  * Created by prady on 3/29/22, 1:32 PM
+ *  * Copyright (c) 2022 . All rights reserved.
+ *  * Last modified 3/29/22, 11:05 AM
+ *
+ */
+
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "MVVMTemplete"
 include ':app'
